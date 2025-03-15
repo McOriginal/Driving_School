@@ -22,7 +22,7 @@ const navBar = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
   const scroll = window.scrollY;
-  navBar.style.transform = `translateY(${scroll}px)`;
+  // navBar.style.transform = `translateY(${scroll}px)`;
 
   if (scroll >= 40) {
     navBar.classList.add('scrollbar');
