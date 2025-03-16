@@ -16,7 +16,26 @@
   font-family: 'Convergence', sans-serif;
 }
 
-.header {
+.btn {
+  display: block;
+  text-transform: capitalize;
+  background: transparent;
+  margin-right: 10px;
+  color: var(--black);
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  padding: 10px;
+  width: 150px;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+
+.btn:hover {
+  background: var(--yellow);
+  color: var(--white);
+}
+
+.home_header {
   width: 100%;
   height: 110vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
@@ -82,12 +101,17 @@ nav .nav_items li {
 nav .nav_items li a {
   text-decoration: none;
   color: var(--white);
+  font-size: 1rem;
   cursor: pointer;
   text-transform: capitalize;
   transition: all ease-in 0.3s;
 }
 
 nav .nav_items li a:hover {
+  color: var(--yellow);
+}
+
+nav .nav_items .active {
   color: var(--yellow);
 }
 
@@ -171,7 +195,7 @@ nav .close {
 }
 
 /* --------------------  */
-/* ------- HOME HEADER CONTENT TEXT-------------  */
+/* ------- HOME home_header CONTENT TEXT-------------  */
 
 .content {
   width: 100%;
@@ -187,11 +211,13 @@ nav .close {
   color: var(--white);
   margin: 1rem 0;
   text-align: center;
+  text-transform: capitalize;
 }
 
-.content .welcome span {
+span {
   color: var(--yellow);
   text-align: center;
+  text-transform: capitalize;
 }
 
 .content .title {
@@ -231,7 +257,7 @@ nav .close {
 
 .card_container .card .card_header {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -385,7 +411,7 @@ nav .close {
 .after_about_container {
   margin: 10% 0;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
     url('../images/acquaintance-of-a-driving-instructor-and-a-student-near-a-training-car.jpg')
       no-repeat center center;
@@ -394,10 +420,11 @@ nav .close {
 }
 
 .after_about_container .box {
-  /* position: absolute;
-  top: 30%;
-  left: 10%; */
-  margin: 1rem auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -664,7 +691,7 @@ nav .close {
   border: none;
 }
 
-.processus .card .card_header {
+.processus .card .card_home_header {
   width: 100%;
   border-bottom: 2px dotted var(--black);
   padding-bottom: 1rem;
@@ -902,6 +929,145 @@ footer .social a:hover {
 /* -------------------------------- */
 /* -------------------------------- */
 /* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* ----------- ABOUT PAGE --------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+.about_header {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url('../images/father-teaching-his-teenage-son-to-drive.jpg') no-repeat
+      center;
+  background-size: cover;
+}
+
+.about_text {
+  margin: 10% 0;
+}
+
+.about_text p {
+  font-size: 1rem;
+  color: var(--black);
+  margin: 1rem auto;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.9rem;
+}
+
+.about_text h5 {
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--yellow);
+  font-size: 1.4rem;
+}
+/* -------------------------------- */
+/* -------------------------------- */
+
+/* -------------------------------- */
+/* ----------- TARIF PAGE--------------------- */
+/* -------------------------------- */
+.tarif_header {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url('../images/tarif.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* -------------------------------- */
+/* ----------- Card Container--------------------- */
+
+.tarif > p {
+  font-size: 1.4rem;
+  color: var(--yellow);
+  text-align: center;
+  margin: 2rem auto;
+  text-transform: capitalize;
+}
+
+.tarif .tarif_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tarif .car {
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+  background: var(--black);
+  padding: 20px;
+  border-radius: 50%;
+}
+.tarif_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 2rem 0.5rem;
+}
+
+.tarif_container .card .card_header {
+  background: var(--black);
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem 0.5rem 0rem 0;
+}
+
+.tarif_container .card .card_header h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-family: var(--font);
+}
+.tarif_container .card .card_header p {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin: 1rem auto;
+}
+
+.tarif_container .card {
+  width: 350px;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tarif_container .card ul {
+  width: 80%;
+}
+
+.tarif_container .card ul li {
+  font-size: 0.9rem;
+  margin: 1rem auto;
+  color: var(--black);
+}
+/* -------------------------------- */
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
 
 /* --------- MEDIA QUERY 850px----------------------- */
 
@@ -998,8 +1164,21 @@ footer .social a:hover {
     flex-wrap: wrap;
   }
 
+  .black_section .card_container .card {
+    max-width: 300px;
+    height: 350px;
+  }
+
+  .black_section .card_container .card h3 {
+    font-size: 1.5rem;
+  }
+
   .processus .card_container .card {
     width: 100%;
+  }
+
+  .processus .card_container .card h3 {
+    font-size: 2rem;
   }
 
   .black_section .box_text {
@@ -1030,7 +1209,7 @@ footer .social a:hover {
     padding: 5px;
   }
 
-  .card_container .card .card_header {
+  .card_container .card .card_home_header {
     flex-wrap: wrap;
   }
 
@@ -1078,11 +1257,11 @@ footer .social a:hover {
     display: none;
   }
 
-  .header .content h4 {
+  .content h4 {
     font-size: 1rem;
   }
 
-  .header .content h2 {
+  .content h2 {
     font-size: 1.5rem;
   }
 
