@@ -30,3 +30,18 @@ window.addEventListener('scroll', () => {
     navBar.classList.remove('scrollbar');
   }
 });
+
+// -------------------------------------------
+// -------------- FAQ -----------------------------
+
+const question = document.querySelectorAll('.question h5');
+
+question.forEach((item) => {
+  item.addEventListener('click', () => {
+    response = item.nextElementSibling;
+    response.classList.toggle('active');
+  });
+});
+
+// -------------------------------------------
+// -------------------------------------------

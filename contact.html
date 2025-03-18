@@ -25,20 +25,18 @@
     <!-- ------------------------------------------------- -->
     <!-- --------------- CSS ---------------------------------- -->
     <link rel="stylesheet" href="assets/styles.css" />
-     <!-- Link Swiper's CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
-
-    <!-- ------------------ Swiper CSS ------------------------------- -->
-     <link rel="stylesheet" href="assets/client_swiper.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- ------------------------------------------------- -->
-    <title>Temoignages Client</title>
+    <!-- ------------------------------------------------- -->
+    <title>Contact</title>
   </head>
   <body>
     <!-- ---------------------------- -->
     <!-- ---------- HEADER ------------------ -->
-    <section class="us_header">
+    <section class="contact_header">
       <nav>
         <div class="logo">
           <img src="images/logo.png" alt="title" />
@@ -46,15 +44,15 @@
         <ul class="nav_items">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html" >à propos</a></li>
-          <li><a href="tarif.html" >tarif</a></li>
-          <li><a href="temoignages.html" >Témoignages</a></li>
+          <li><a href="tarif.html" class="active">tarif</a></li>
+          <li><a href="temoignages.html">Témoignages</a></li>
           <li class="dropdown">
-            <a href="ressources.html" class="active"
+            <a href="ressources.html"
               >Ressources <i class="fa-solid fa-caret-down"></i
             ></a>
             <ul class="dropdown_items">
               <li><a href="images/code.pdf" target="_blank">Code de conduite</a></li>
-             
+              <li><a href="pourquoi_nous.html">Pourquoi nous ?</a></li>
               <li><a href="faq.html">FAQ</a></li>
             </ul>
           </li>
@@ -67,7 +65,7 @@
       </nav>
 
       <div class="content">
-        <h4 class="welcome">Temoignages sur : <span>Driving school</span></h4>
+        <h4 class="welcome">Contacter <span>Driving school</span></h4>
         <h2 class="title">Votre chemin vers une conduite sûr et confiante</h2>
       </div>
     </section>
@@ -76,65 +74,84 @@
     <!-- ---------------------------- -->
     <!-- ---------------------------- -->
 
+    <div class="heurre_container">
+      <h2>Ouvert <span> 7 </span> jours sur <span> 7 </span> </h2>
+      <p>Obtenir un permis de conduire est un luxe qui augmentera votre mobilité et votre indépendance, mais il comporte aussi une lourde obligation de sécurité.</p>
+      <button class="btn"> S'inscrire maintenant</button>
+    </div>
+   
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
 
-   <!-- --------- Container------------------- -->
 
-    <!-- --------- Container------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------- contact_Card Icons ------------------ -->
+    <!-- ---------------------------- -->
+      <!-- ---------- 1------------- -->
+      <div class="contact_card_icon">
+          <div class="contact_card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4> emplacements</h4>
+            <ul>
+              <li>15 rue des Écoles, 75008 Paris</li>
+              <li>12 rue de la République, 75001 Paris</li>
+              <li>16 rue des Capucines, 75008 Paris</li>
+            </ul>
+          </div>
+          <!-- ---------- 2------------- -->
+          
+       
+            <!-- ---------- 2------------- -->
+              <div class="contact_card">
+                <i class="fa-solid fa-phone-volume"></i>
+                <h4> Téléphones</h4>
+                <ul>
+                  <li>01 23 45 67 89</li>
+                  <li>02 34 56 78 90</li>
+                  <li>03 45 67 89 01</li>
+                </ul>
+              </div>
+              <div class="contact_card">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Emails</h4>
+                <ul>
+                  <li>info@drivingschool.com</li>
+                  <li>contact@drivingschool.com</li>
+                  <li>support@drivingschool.com</li>
+              </div>
 
-    <section class="disting_container">
-      <div class="box_text">
-        <div class="box_left">
-          <p>chez  <span>driving school</span> </p>
-          <h3> Que-ce qui vous distingue ?</h3>
+            </div>
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+
+
+    <!-- ----------- Formulaire de Contact----------------- -->
+
+    <div class="contact_form">
+      <h3>Remplissez le formulaire pour réserver votre rendez-vous</h3>
+      <form action="">
+        <div class="input_box">
+          <label for="nom">Votre Nom et Prénom</label>
+        <input type="text" name="nom" id="nom">
         </div>
-        <div class="box_right">
-          <p>Notre auto-école utilise exclusivement des véhicules neufs pour assurer la sécurité des élèves et les familiariser avec les dernières technologies automobiles. Cette approche offre un environnement d'apprentissage sécurisé et permet aux élèves de se tenir au courant des dernières technologies de conduite. Rejoignez-nous pour une formation à la conduite de pointe.
-
-          </p>
+        <div class="input_box">
+          <label for="nom">téléphone</label>
+        <input type="text" name="nom" id="nom">
         </div>
-      </div>
-
-<!-- ------------ Card Images------------ -->
- <div class="cards">
-  <div class="card">
-    <img src="images/male-instructor-happy-with-driving-of-his-student.jpg" alt="Apprentissage" />
-    <h3>Instructeurs expérimentés et certifiés
-    </h3>
-    <p>À l'école de conduite Drive Canada, nos instructeurs sont non seulement certifiés par les autorités provinciales, mais possèdent également des années d'expérience en enseignement pour vous garantir la meilleure formation possible. Leur approche patiente et amicale rend chaque leçon agréable, même pour les plus nerveux. Avec nos instructeurs à vos côtés, vous acquerrez les connaissances et les compétences nécessaires pour conduire en toute confiance et en toute sécurité.
-
-    </p>
-  </div>
-
-  <!-- ------------2 --------------- -->
-  <div class="card">
-    <img src="images/instructor-showing-traffic-shemes-to-a-female-student-outdooors.jpg" alt="Apprentissage" />
-    <h3>Plans de cours personnalisés</h3>
-    <p>Nous savons que chaque élève apprend à son propre rythme, c'est pourquoi nos cours sont adaptés à vos besoins individuels. Que vous soyez débutant ou que vous souhaitiez simplement vous remettre à niveau, nos programmes de cours personnalisables vous permettent de tirer le meilleur parti de votre expérience avec nous. De l'apprentissage des bases de la conduite à la maîtrise des techniques de conduite avancées, nous proposons des formations individuelles adaptées à votre style d'apprentissage.
-</p>
-  </div>
-  <!-- ------------3 --------------- -->
-  <div class="card">
-    <img src="images/father-teaching-his-teenage-son-to-drive.jpg" alt="Apprentissage" />
-    <h3>Engagement envers la sécurité</h3>
-    <p>Votre sécurité est notre priorité absolue. Nous intégrons des techniques de conduite défensive à tous nos cours, vous permettant d'apprendre à gérer diverses conditions routières et situations de circulation. Notre formation pratique sur route vous prépare à prendre des décisions éclairées et sûres au volant, que vous conduisiez en ville, sur autoroute ou en milieu rural. Nos cours de conduite sont proposés à des prix compétitifs et nos forfaits sont clairs et simples, sans frais cachés.
-
-
-    </p>
-  </div>
- </div>
-
-    </section>
+        <div class="input_box">
+          <label for="nom">adresse emails</label>
+        <input type="text" name="nom" id="nom">
+        </div>
+        <div class="input_box">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button class="btn">Envoyer</button>
+      </form>
+    </div>
     <!-- ---------------------------- -->
     <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-    <!-- ---------------------------- -->
-
-    
     <!-- ---------------------------- -->
     <!-- ---------------------------- -->
 
@@ -155,8 +172,18 @@
      </section>
     <!-- ---------------------------- -->
     <!-- ---------------------------- -->
- 
 
+    
+
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
     <!-- ---------------------------- -->
     <!-- ---------------------------- -->
     <!-- ---------------------------- -->
@@ -199,9 +226,12 @@
 
     <!-- ----------------------------------- -->
     <!-- ------------ JAVASCRIPT ----------------------- -->
-   
-   <script src="assets/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+
   
+
     <!-- ----------------------------------- -->
     <!-- ----------------------------------- -->
   </body>

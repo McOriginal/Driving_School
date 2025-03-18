@@ -760,118 +760,6 @@ span {
   font-size: 1rem;
   color: var(--yellow);
 }
-/* -------------------------------- */
-/* -------------------------------- */
-
-/* -------------------------------- */
-/* ---------- Galerie d'images---------------------- */
-/* -------------------------------- */
-.galerie .box_text {
-  display: flex;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-
-/* -------------------------------- */
-/* ----------- Footer --------------------- */
-footer {
-  width: 100%;
-  background: var(--black);
-  color: var(--white);
-  /* height: 70vh ; */
-  padding: 2rem 0;
-}
-
-footer .container {
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .logo {
-  margin: 1rem auto;
-  max-width: 200px;
-}
-
-footer p {
-  text-align: center;
-  font-size: 1rem;
-  color: var(--white);
-}
-
-footer .link {
-  margin: 2rem auto;
-  height: 100px;
-  border-top: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
-}
-
-footer .link ul {
-  list-style-type: none;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  gap: 1.5rem;
-}
-
-.link ul a {
-  text-decoration: none;
-  font-family: var(--font);
-  color: var(--white);
-  text-transform: capitalize;
-  transition: all ease-in-out 0.3s;
-}
-
-footer ul a:hover {
-  color: var(--yellow);
-}
-
-footer .copy_right {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-}
-
-footer .copy_right a {
-  color: var(--yellow);
-}
-
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-footer .social a {
-  padding: 20px;
-  background: var(--white);
-  border-radius: 10px;
-  font-size: 1.2rem;
-  color: var(--yellow);
-  transition: all ease-in-out 0.3s;
-}
-
-footer .social a:hover {
-  background: var(--yellow);
-  color: var(--white);
-}
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
 
 /* -------------------------------- */
 /* -------------------------------- */
@@ -1085,10 +973,358 @@ footer .social a:hover {
 /* -------------------------------- */
 /* -------------------------------- */
 /* -------------------------------- */
+
+/* -------------------------------- */
+/* ---------- Galerie d'images---------------------- */
+/* -------------------------------- */
+.galerie .box_text {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* ---------- FAQ PAGE---------------------- */
+/* -------------------------------- */
+.faq_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.faq_container .box_left,
+.faq_container .box_right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 1.6rem;
+}
+
+.question {
+  border: 1px solid var(--black);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.question h5 {
+  font-size: 1rem;
+  font-family: var(--font);
+  color: var(--yellow);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s ease-in;
+}
+
+.question h5:hover {
+  text-decoration: underline var(--black);
+}
+
+.question p {
+  display: none;
+  font-size: 0.8rem;
+  color: var(--black);
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  margin-left: 0.8rem;
+  transition: all 7s ease-in;
+}
+
+.question p.active {
+  display: block;
+}
+
+.question h5 i {
+  margin-right: 0.5rem;
+  color: var(--black);
+}
 /* -------------------------------- */
 /* -------------------------------- */
 /* -------------------------------- */
 /* -------------------------------- */
+
+/* -----------Contact Page --------------------- */
+/* -------------------------------- */
+.contact_header {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url('../images/13d11c4f793ba6b9b7ad94acae872e39.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.heurre_container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--yellow);
+  color: var(--white);
+}
+
+.heurre_container h2 {
+  font-size: 2rem;
+  margin: 1rem auto;
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+
+.heurre_container p {
+  font-size: 0.9rem;
+}
+
+.heurre_container span {
+  color: var(--white);
+}
+
+.heurre_container .btn {
+  display: block;
+  width: 25%;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.heurre_container .btn:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.contact_card_icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin: 10% 0;
+}
+
+.contact_card_icon .contact_card {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--black);
+  border-radius: 0.4rem;
+}
+
+.contact_card i {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact_card h4 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: var(--font);
+  color: var(--yellow);
+  margin: 1rem auto;
+}
+
+.contact_card ul li {
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  color: var(--black);
+}
+
+.contact_form h3 {
+  font-family: var(--font);
+  color: var(--yellow);
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+}
+
+form {
+  width: 70%;
+  padding: 2rem 1rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.4rem;
+}
+
+form .input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px 0;
+  gap: 0.2rem;
+}
+
+.input_box label {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font);
+  color: var(--black);
+}
+
+.input_box input,
+.input_box textarea {
+  font-size: 1rem;
+  color: var(--black);
+  width: 100%;
+  text-transform: capitalize;
+  display: block;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 0;
+  outline: 1px solid var(--black);
+  resize: vertical;
+  transition: all ease-in-out 0.3s;
+}
+
+.input_box input:focus,
+.input_box textarea:focus {
+  outline: 2px solid var(--black);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+form .btn {
+  width: 80%;
+  border-radius: 0.4rem;
+  margin: 0.5rem auto;
+  font-weight: bold;
+  padding: 1rem 0;
+  color: var(--yellow);
+}
+
+form .btn:hover {
+  background: var(--yellow);
+  color: var(--white);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+/* -------------------------------- */
+/* ----------- Footer --------------------- */
+footer {
+  width: 100%;
+  background: var(--black);
+  color: var(--white);
+  /* height: 70vh ; */
+  padding: 2rem 0;
+}
+
+footer .container {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo {
+  margin: 1rem auto;
+  max-width: 200px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+footer .link {
+  margin: 2rem auto;
+  height: 100px;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+footer .link ul {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.link ul a {
+  text-decoration: none;
+  font-family: var(--font);
+  color: var(--white);
+  text-transform: capitalize;
+  transition: all ease-in-out 0.3s;
+}
+
+footer ul a:hover {
+  color: var(--yellow);
+}
+
+footer .copy_right {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .copy_right a {
+  color: var(--yellow);
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .social a {
+  padding: 20px;
+  background: var(--white);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: var(--yellow);
+  transition: all ease-in-out 0.3s;
+}
+
+footer .social a:hover {
+  background: var(--yellow);
+  color: var(--white);
+}
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
 /* -------------------------------- */
 /* -------------------------------- */
 /* -------------------------------- */
@@ -1124,6 +1360,10 @@ footer .social a:hover {
 
   .about .box_text {
     width: 100%;
+  }
+
+  .contact_card_icon {
+    flex-wrap: wrap;
   }
 }
 /* -------------------------------- */
@@ -1260,6 +1500,19 @@ footer .social a:hover {
   }
   .card_container .card h3 {
     font-size: 1rem;
+  }
+
+  .faq_container {
+    flex-wrap: wrap;
+  }
+  .faq_container .box_left,
+  .faq_container .box_right {
+    width: 100%;
+  }
+
+  .heurre_container .btn {
+    font-size: 0.8rem;
+    width: 70%;
   }
 
   footer .container p {
