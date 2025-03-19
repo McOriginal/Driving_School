@@ -16,6 +16,56 @@
   font-family: 'Convergence', sans-serif;
 }
 
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------- SECTION ANIMATION ------------------------------ */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+
+header .content {
+  animation: showHeaderAnimation 1s forwards;
+}
+
+@keyframes showHeaderAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollView {
+  transform: scale(0.4);
+  opacity: 0;
+  transition: all ease-in 0.8s;
+}
+
+.visible {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.itemsView {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.itemVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+
 .btn {
   display: block;
   text-transform: capitalize;
@@ -73,6 +123,8 @@ nav {
 .scrollbar {
   background: var(--black);
   box-shadow: var(--shadow);
+  position: fixed;
+  z-index: 1000;
 }
 
 nav .logo {
@@ -677,6 +729,12 @@ span {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.processus > p {
+  color: var(--yellow);
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .processus .text {
